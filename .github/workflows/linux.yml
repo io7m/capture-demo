@@ -1,0 +1,21 @@
+name: linux
+
+on:
+  push:
+    branches: [ develop, feature/*, release/* ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run
+        run: ./.github/workflows/record.sh
+      - name: Upload video
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          name: video
+          path: video.webm
+
