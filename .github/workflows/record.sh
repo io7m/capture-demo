@@ -55,7 +55,8 @@ sleep 1
 #------------------------------------------------------------------------
 # Play some video.
 
-ffplay 164214_720p.mp4
+wget https://ataxia.io7m.com/2023/05/25/flowers.webm
+ffplay flowers.webm
 
 #---------------------------------------------------------------------
 # Wait a while, and then instruct ffmpeg to stop recording. This step
