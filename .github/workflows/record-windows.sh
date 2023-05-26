@@ -9,7 +9,7 @@ ffmpeg \
   -y \
   -r 60 \
   -video_size 1280x1024 \
-  -i 'video=screen-capture-recorder' \
+  -i desktop \
   video.webm &
 
 FFMPEG_PID="$!"
