@@ -12,7 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run
-        run: pwsh .github/workflows/record.ps1
+        shell: bash
+        run: .github/workflows/record-windows.sh
       - name: Upload video
         uses: actions/upload-artifact@v2
         if: ${{ always() }}

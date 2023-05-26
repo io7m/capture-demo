@@ -47,7 +47,7 @@ ffmpeg \
   -r 60 \
   -video_size 1280x1024 \
   -i :99 \
-  test-suite.webm &
+  video.webm &
 
 FFMPEG_PID="$!"
 sleep 1
