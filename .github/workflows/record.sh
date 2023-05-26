@@ -56,7 +56,7 @@ sleep 1
 # Play some video.
 
 wget https://ataxia.io7m.com/2023/05/25/flowers.webm
-ffplay flowers.webm
+ffplay -autoexit flowers.webm
 
 #---------------------------------------------------------------------
 # Wait a while, and then instruct ffmpeg to stop recording. This step
