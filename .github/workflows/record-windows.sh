@@ -5,7 +5,7 @@ exec > >(tee build.txt) 2>&1
 #
 
 ffmpeg \
-  -f dshow \
+  -f gdigrab \
   -y \
   -r 60 \
   -video_size 1280x1024 \
