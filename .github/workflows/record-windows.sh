@@ -5,11 +5,11 @@ exec > >(tee build.txt) 2>&1
 #
 
 ffmpeg \
-  -f x11grab \
+  -f dshow \
   -y \
   -r 60 \
   -video_size 1280x1024 \
-  -i :99 \
+  -i 'video=screen-capture-recorder' \
   video.webm &
 
 FFMPEG_PID="$!"
